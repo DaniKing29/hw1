@@ -1,0 +1,82 @@
+.intestazione{
+    position: relative;
+    top: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: "Juventus Fans Bold";
+    margin: 15px 0;
+    font-weight: normal;
+    padding: 0 20px;
+    margin-top: 20px;
+    z-index: 1;
+  }
+  
+  .intestazione span{
+    background: #fff;
+    z-index: 1;
+    position: relative;
+    padding: 0 10px;
+  }
+  
+  .barra{
+    content: " ";
+    height: 1px;
+    background-color: #cdcdcd;
+  
+    width: 80%;
+    position: absolute;
+  
+    z-index: 0;
+    top: 18.5%;
+  
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  
+  
+  
+  .intro-contenitor {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.intestazione span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.barra {
+    height: 4px;
+    background-color: #000;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control, .form-select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}

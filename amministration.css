@@ -1,0 +1,108 @@
+.intestazione{
+    position: relative;
+    top: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: "Juventus Fans Bold";
+    margin: 15px 0;
+    font-weight: normal;
+    padding: 0 20px;
+    margin-top: 20px;
+    z-index: 1;
+  }
+
+  .intestazione span{
+    background: #fff;
+    z-index: 1;
+    position: relative;
+    padding: 0 10px;
+  }
+
+  .barra{
+    content: " ";
+    height: 1px;
+    background-color: #cdcdcd;
+
+    width: 80%;
+    position: absolute;
+
+    z-index: 0;
+    top: 18.5%;
+  
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  
+
+  .banner{
+
+    position: relative;
+    top: 160px;
+    height: 250px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 200px;
+    
+  }
+
+  .banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: -1 -150px;
+   
+  }
+
+
+
+  .intro-contenitor{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+  }
+
+
+  
+
+  .intro img :hover{
+
+    color: #fff;
+  }
+
+ 
+
+  
+
+  .freccia{
+    position: absolute;
+    z-index: 2;
+    
+    top: 120px;
+    left: 50px;
+  }
+
+  .freccia img{
+    height: 50px;
+    width: 50px;
+
+  }
+
+
+  .cont-intro{
+    margin-top: 200px;
+    display: flex;
+    width: 70%;
+    justify-content:space-between;
+    align-items: center;
+  }
+
+  .cont-intro img{
+    height: 250px;
+    width: 250px;
+  }
+
+ 

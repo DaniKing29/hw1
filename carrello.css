@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+  }
+  
+  .intestazione{
+      position: relative;
+      top: 120px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-family: "Juventus Fans Bold";
+      margin: 15px 0;
+      font-weight: normal;
+      padding: 0 20px;
+      margin-top: 20px;
+      z-index: 1;
+    }
+  
+    .intestazione span{
+      background: #fff;
+      z-index: 1;
+      position: relative;
+      padding: 0 10px;
+    }
+  
+    .barra{
+      content: " ";
+      height: 1px;
+      background-color: #cdcdcd;
+  
+      width: 80%;
+      position: absolute;
+  
+      z-index: 0;
+      top: 18.5%;
+    
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+  
+    
+  
+    .container-carrello {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+  }
+  
+  .cart-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item img {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+  }
+  
+  .cart-item h2 {
+      flex-grow: 1;
+  }
+  
+  .quantity-controls {
+    margin-left: 50px;
+      display: flex;
+      align-items: center;
+  }
+  
+  .quantity-controls button {
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+
+  .quantity-controls button:hover {
+    border-color: #ff2850;
+    color:#ff2850;
+}
+  
+  .quantity-controls span {
+      display: inline-block;
+      min-width: 20px;
+      text-align: center;
+  }
+  
+
+  .cestino img{
+    height: 30px;
+    width: 30px;
+  }
+.cestino img {
+    height: 30px;
+    width: 30px;
+}
+
+.cestino img:hover {
+    content: url('images/cest_rosso.png');
+}
