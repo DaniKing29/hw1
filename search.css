@@ -1,0 +1,33 @@
+/* Stili per il dropdown */
+#dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 150%; /* Imposta la larghezza al 100% */
+    max-height: 500px; /* Altezza massima del dropdown */
+    overflow-y: auto; /* Abilita lo scorrimento verticale se necessario */
+    overflow-x: hidden; /* Nasconde lo scorrimento orizzontale */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -10%; /* Sposta il dropdown di 10% verso sinistra */
+}
+
+/* Stili per i link nel dropdown */
+#dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Stili per le immagini nei link del dropdown */
+#dropdown-content a img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+/* Stili per l'effetto hover sui link del dropdown */
+#dropdown-content a:hover {
+    background-color: #f1f1f1;
+}

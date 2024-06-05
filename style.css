@@ -1,0 +1,1401 @@
+    /* font-family: "Juventus Fans Regular"; */
+    /* font-family: "Juventus Fans Bold"; */
+
+body{
+  margin: 0;
+}
+
+/*.  JUVENTUS OFFICAL ONLINE STORE TESTO  */
+
+    .namehome{  
+        position: relative;
+        left: 30px;
+        margin-left: 0.5em;
+        margin-bottom: 0.2em;
+        font-family: 'Juventus Fans Bold';
+        font-size: 23px;
+        height: 100%;
+    }
+
+    .namehome:hover{
+      color: #ff2850;
+  }
+
+    .attivo{
+      color:#ff2850;
+    }
+
+
+/* MENU ICON*/
+
+    .topbar{
+        border-right: 2px solid #E8E8E8;
+        cursor: pointer;
+        padding: 0 30px;
+        height: 100%;
+        width: 100;
+     }
+      .topbar a{
+        position: relative;
+        top: 25%;
+        width: 100px;
+        height: 3px;
+        font-size: 30px;
+        margin: 3px 0;
+      }
+
+      .topbar :hover{
+        color: #e70f0f;
+      }
+
+        header{
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          font-family: 'JuventusFans-Regular';
+          font-size: 18px;
+          background-color: #fff;
+          color: #000;
+          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.14);
+          z-index: 1000;
+        }
+
+        .topbar-overlay {
+          height: 100%;
+          width: 0; /* Impostato inizialmente a 0 per nasconderlo */
+          position: fixed;
+          z-index: 5;
+          top: 0;
+          left: 0;
+          background-color: #fff;
+          overflow-x: hidden;
+          transition: 0.5s;
+        }
+        
+        .topbar-content {
+          position: relative;
+          top: 25%;
+          width: 100%;
+          text-align: center;
+          margin-top: 30px;
+        }
+        
+        .topbar-overlay a {
+          padding: 8px;
+          text-decoration: none;
+          color: #000;
+          font-family: 'Juventus Fans Regular';
+          text-transform: uppercase;
+          font-size: 22px;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .topbar-overlay a:hover, .topbar-overlay a:focus {
+          color: #ff2850;
+        }
+        
+        .topbar-overlay .closebtn {
+          position: absolute;
+          top: 20px;
+          right: 45px;
+          font-size: 60px;
+        }
+
+
+        /*  ICONE PROFILO-CARRELLO-PREFERITI */
+
+        .icon{
+            position: relative;
+            left: 65px;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            justify-content: space-around;
+            width: 170px;
+            height: 95px;
+        }
+
+        .icon img{
+            height: 22px;
+            width: 23px;
+        }
+
+
+       .account-icon{
+            height: 23px;
+       }
+      
+   
+   
+    
+    .menu-account {
+        position: absolute; 
+        top: 87%; 
+        left: 0; 
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        z-index: 1;
+        border: 2px solid #E8E8E8;
+        border-top-style: none;
+        display: none;
+        padding: 10px;
+    }
+
+    .menu-account a{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Juventus Fans Bold';
+      font-size: 20px;
+      color:rgb(81, 80, 80);
+      text-transform: uppercase;
+      text-decoration: none;
+  }
+
+  .menu-account h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Juventus Fans Bold';
+    font-size: 25px;
+    color:black;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+    
+  .menu-account a:hover{
+    color: #ff2850;
+}
+.menu-account h1:hover{
+  color: #ff2850;
+}
+  
+
+/* QUANTITA' CARRELLO E PREFERITI */
+.quantity-badge-favorite{
+  position: absolute;
+  top: 43px;
+  right: 62px;
+  font-weight: bolder;
+  background-color:  #ff2850; 
+  color: white; 
+  font-size: 12px; 
+  padding: 3px 6px; 
+  border-radius: 50%; 
+}
+
+.quantity-badge-cart{
+  position: absolute;
+  top: 43px;
+  right: 5px;
+  font-weight: bolder;
+  background-color: #ff2850; 
+  color: white; 
+  font-size: 12px; 
+  padding: 3px 6px; 
+  border-radius: 50%; 
+}
+
+
+
+/* NAVBAR*/
+
+    .topnav {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-between;
+       height: 70px;     
+
+    }
+
+   .topnav strong span{
+       color: #000;
+       text-decoration: none;
+       text-transform: uppercase;
+    }
+
+    h1{  
+       font-family: 'Juventus Fans Bold';
+       font-size: 26px;
+       text-transform: uppercase;
+    }
+
+    @media (max-width: 992px) {
+      h1{  
+        font-size: 20px;
+        white-space: nowrap;
+       }
+     .namehome{  
+      top: 10px;
+      right: 5px;
+     }
+    }
+
+/* LOGO JUVE*/
+
+    .logo{
+      position: relative;
+      right: 25px;
+      display: flex;
+      width: 1.3em;
+      height: 100%;    
+    }
+
+    @media (max-width: 992px) {
+      .logo{
+        top: 5px;
+        right: -2px;
+        height: 60%;  
+      }
+    }
+
+  
+/* SEARCH BAR*/
+
+.search-container{
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 30px;
+  border-left: 2px solid #E8E8E8;
+  background-color: #f6f6f6; 
+  height: 100%;
+}
+
+/* CONTENITORE SECONDARIO SEARCH BAR*/
+
+.box-search{
+  border-bottom: 1px solid #ff2850;
+}
+
+.search-container button{
+  font-size: 20px;
+  border: transparent;
+  background-color: #f6f6f6;
+}
+
+#search{ 
+  height: 3.0em;
+  line-height: 2.5em;
+  width: 130px;
+  min-width: 200px;
+  margin: 0;
+  padding: 0 30px 0 0;
+  border: none transparent;
+  outline: none;
+  background-color: transparent;
+  text-transform: uppercase;  
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.emote{  
+    font-size:16px
+}
+
+
+@media (max-width: 992px) {
+  #search{ 
+    display: none;  
+  }
+
+  .box-search{
+    border: transparent; 
+  }
+  
+}
+
+
+
+/* OVERLAY */
+
+.carousel{
+  position: relative;
+  top: 140px;
+  height: 639px;
+  width: 100%;
+}
+
+.carousel img {
+  height: 100%;
+  width: 100%;
+}
+
+#carousel-image {
+  background-image: url("images/sfondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.text-box span strong{
+  position: relative;
+  color: #f6f6f6;
+  font-family: 'Juventus Fans Regular';
+  font-size: 3.7vh;
+  position: absolute;
+  bottom: 12.5vh;
+  left: 5%;
+  right: 5%;
+  text-align: center;
+  z-index: 1;
+}
+
+.text-box h1{
+  position: relative;
+  color: #f6f6f6;
+  font-family: 'Juventus Fans Regular';
+  font-size: 13.7vh;
+  position: absolute;
+  bottom: 7vh;
+  left: 5%;
+  right: 5%;
+  text-align: center;
+  z-index: 1;
+}
+
+.text-box button{
+  position: relative;
+  bottom: 10vh;
+  width: 169px;
+  height: 40px;
+  left: 650px;
+  text-align: center;
+  font-family: 'Juventus Fans Regular';
+  background-color: #ff2850;
+  border: 1px solid #ff2850;
+  color:#FFFFFF;
+  text-transform: uppercase;
+  font-size: 22px;
+  z-index: 5;
+}
+
+@media (max-width: 992px) {
+  .carousel{  
+    background-image: url(images/sfondo.png);
+    background-position: center;
+    background-size: cover;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    height: 65vh;
+    width: 100%; 
+    background: linear-gradient(to top, rgba(0, 0, 1, 0.72));
+  }
+
+  .text-box span strong{  
+    z-index: 1;
+    font-size: 2vh;
+    bottom: 12.5vh;
+  }
+
+  .text-box button{
+    bottom: 5vh;
+    width: 120px;
+    height: 25px;
+    font-size: 17px;
+  }
+
+}
+
+
+/* MENU NAVIGATION */
+
+.SecondBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 325px;
+    border-top: 2px solid #E8E8E8;
+    border-bottom: 2px solid #E8E8E8;
+}
+
+  .SecondBar a {
+    
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Juventus Fans Regular';
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 10px;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .SecondBar a:hover {
+    border-bottom: 2px solid rgb(255, 0, 0);
+  }
+  
+  .SecondBar a.active { 
+    color: red;
+  }
+
+  @media (max-width: 992px) {
+    .SecondBar{  
+      display: none;
+    }
+  }
+
+
+  
+  .dropdown{
+    position: relative;
+    left: 130px;
+    font-size: 16px;
+    background-color:#FFFFFF;
+    padding: 14px 20px;
+    font-family: "Juventus Fans Regular"; 
+    text-transform: uppercase;
+    border: none;
+    margin: 0; 
+  }
+
+  .dropdown:focus{
+    outline: none;
+}
+
+  @media (max-width: 792px) {
+    .dropdown {
+      display: none;
+    }
+  }
+
+
+  /* PUBBLICITA' */
+
+  .text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin: 40px;  
+    position: relative;
+    margin-top: 170px;
+  } 
+
+  .separa-s{
+    border-right: 1px solid #cdcdcd;
+    width: 100%;
+  }
+  .separa-d{ 
+    border-left: 1px solid #cdcdcd;
+    width: 100%;
+  }
+  .separa-c{ 
+    width: 100%;
+  }
+
+  .text span ,p{
+    font-family: "Juventus Fans Regular"; 
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bolder;
+  }
+
+  .text span {
+    color: #fe2951;
+    font-size: 25px;
+  }
+
+
+@media only screen and (max-width: 600px) {
+  .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top:60px
+  }
+  .text div{
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+  } 
+}
+
+
+/* PRODOTTI IMPERDIBILI  //  BEST SELLER */
+
+.intestazione{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Juventus Fans Bold";
+  margin: 15px 0;
+  font-weight: normal;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.column {
+  height: 100%;
+  width: 100%;
+  padding-right: 2px;
+}
+
+.titolo{
+  height: 50px;
+  background-color: #ffff;
+  min-height: 55px;
+  text-transform: uppercase;
+  margin: -10px 30px 0 10px;
+  padding: 10px 30px 0 15px;
+  position: relative;
+  top: -5px;
+}
+
+.prezzo{
+  height: 25px;
+  background-color: #fff;
+  min-height: 40px;
+  text-transform: uppercase;
+  margin: -10px 30px 0 10px;
+  padding: 10px 30px 0 15px;
+  position: relative;
+  font-family: 'Times New Roman', Times, serif;
+  top: 5px;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.row{
+  height: 300px;
+  display: flex;
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+.row img{
+  width: 100%;
+  height: 100%;
+}
+
+.row p{
+  position: relative;
+  font-family: 'Juventus Fans Bold';
+  font-size: 2.1vh;
+  text-transform: uppercase;
+  bottom: 15px;
+  color: #636363;
+}
+
+.frecce div{ 
+    text-decoration: none;
+    display: inline;
+    padding: 10px 18px;
+    margin-left: 20px;
+    position: relative;
+    bottom: 20px;
+    font-size: 20px;
+}
+
+.previous {
+  background-color: white;
+  color: black;
+
+}
+
+.next {
+  background-color: white;
+  color: black;
+}
+
+.round {
+  border-radius: 50%;
+  border: 1.5px solid black;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 900px) {
+  .row  {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .row p{
+    font-size: 1.8vh;
+  }
+
+  .prezzo{
+    font-size: 8px;
+  }
+
+  .row{
+    margin-bottom: -10px;
+  }
+  
+}
+
+/* SEZIONE TUTE */
+
+.blocco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+div.header {  
+  display: flex;  
+  flex-direction: row; 
+  width: 100%;
+  height: 100%;
+  }
+
+  div.header img{
+    height: 100%;
+    width:100%;
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    width: 80%;
+    height: 100px;
+    margin-top: -20px;
+    margin-left: -30px;
+    font-weight: bolder;
+  }
+
+
+.container a{
+  font-family: "Juventus Fans Regular"; 
+  text-transform: uppercase;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-bottom: 17px;
+  padding-top: 8px;
+}
+
+.container button{
+  font-family: "Juventus Fans Regular"; 
+  text-transform: uppercase;
+  font-size: 20px;
+  height: 35px;
+  width: 150px;
+  color: #f9f9f9;
+  background-color: #ff2850;
+  border: #ff2850;
+  margin-left: 20px;
+
+}
+
+@media only screen and (max-width: 600px) {
+   .blocco{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card{
+      margin-bottom: 20px;
+  }
+}
+
+
+/* SPONSOR */
+
+  .sponsor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sponsor img{
+    height: 180px;
+    width: 375px;
+    margin-right: 35px;
+    padding-top: 4%;
+    padding-right: 1px;
+    padding-bottom: 4%;
+    padding-left: 1px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .sponsor{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sponsor img{     
+      padding-left: 35px;
+    }
+ }
+
+ 
+  /*  ABBIGLIAMENTO  */
+
+  .box3{
+    width: 100%;
+    display: flex;
+    height: 680px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+   .par{
+    position: relative;
+    text-align:start;
+    background-color: #ffffff;
+    width: 575px;
+    height: 120px;
+    top: 90px;
+    left: -50px;
+    margin-left: 10%;
+    margin-right: 30%;
+    font-weight: bolder;
+    margin-bottom: 65px;
+  }
+
+.par p{
+  font-family: "Juventus Fans Regular"; 
+  text-transform: uppercase;
+  font-size: 25px;
+  padding-left: 20px;
+
+}
+
+.par button{
+  font-family: "Juventus Fans Regular"; 
+  text-transform: uppercase;
+  font-size: 20px;
+  height: 35px;
+  width: 150px;
+  color: #f9f9f9;
+  background-color: #ff2850;
+  border: #ff2850;
+  margin-left: 20px;
+}
+
+.box-item1{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  background-image: url(images/kid2.jpg);
+  background-position: center;
+  background-size: cover;
+
+}
+
+.box-item2{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  background-image: url(images/kid.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+.box-item1-modificata{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  background-image: url(images/bambini2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.box-item2-modificata{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  background-image: url(images/bambini.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .box3{
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+  }
+
+  .box-item1{
+     height: 100%;
+     margin-bottom: 50px;
+  }
+
+  .box-item2{
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+}
+
+/*  TRAINING  */
+
+.box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  margin-bottom: 300px;
+  height: 465px;
+}
+
+.box img{
+  width: 100%;
+  height: 100%;
+}
+
+.box .par{
+  position: relative;
+  top: -35px;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .box{ 
+    height: 265px;
+    margin-bottom: 105px;
+
+  } 
+
+}
+ 
+ 
+  /*  FOOTER  */
+
+.topfooter{
+  background-color: #000000;
+  height: 36px;
+  width: 100%;
+}
+
+  .footer { 
+    text-align: center;
+    padding: 8px;
+    background-color: #151515;
+    height: 136px;
+    align-items: center;
+  }
+
+  .footer p{
+   
+    text-align: center;
+    line-height: 18px;
+    color: #666666;
+    Font-family:"Roboto";
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+
+  @media only screen and (max-width: 800px) {
+
+    .footer p{
+      text-align: start;
+      font-size: 11px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  
+  }
+
+
+
+  /* PERSONALIZZA IL TUO KIT */
+
+  .header-menu{ 
+    text-align: center;
+    height: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-bottom: 1px solid #cdcdcd; 
+  }
+
+  .header-menu span{
+    font-family: "Juventus Fans Regular";
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-right: 35px;
+    padding-bottom: 18px;
+  }
+
+  
+  .header-menu span:hover {
+    border-bottom: 2px solid rgb(255, 0, 0);
+    color: red;
+  }
+  
+
+  .tab-taglie:hover {
+    color: #ff2850;
+  }
+  
+
+  .contenitor-item{
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+  }
+  
+  .menu-contenitor{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+  }
+
+  .menu-box{
+    height: 450px;
+    width: 400px;
+  }
+
+  .card-img1{
+    background-image: url(images/maglietta-casa.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    width: 400px; 
+  }
+
+  .card-img2 {
+    background-image: url(images/vlahovic.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 450px;
+    width: 400px;
+  }
+
+
+ .custom-select{
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+  width: 200px;
+  }
+
+  .custom-select span {
+    position: relative;
+    left: 85px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: underline;
+    font-size: 15px;
+    font-family: 'Juventus Fans Bold';
+    white-space:nowrap;
+    font-weight: bolder;
+  }
+
+
+  .custom-select select{
+    height: 49px;
+    font-size: 18px;
+    line-height: 46px;
+    padding-left: 10px;
+    padding-right: 36px;
+    border-bottom: 1px solid #cdcdcd;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #f6f6f6;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    outline: none;
+    color: #686868;
+}
+
+.spot{
+  height: 70px;
+  background-image: url(images/spot.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 55px;
+}
+
+.acquisto{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 20px;
+}
+
+.radio{
+  position: relative;
+  right: 165px;
+}
+
+input[type=radio] {
+  border: 0px;
+  width: 100%;
+  height: 1.5em;
+}
+
+.acquisto span{
+  color: #686868;
+  text-transform: uppercase;
+  font-family: 'Juventus Fans Regular';
+  font-size: 25px;
+}
+
+.acquisto p{
+  color: #000000;
+  text-transform: uppercase;
+  font-family: 'Juventus Fans Regular';
+  font-size: 22px;
+  position: relative;
+  top:-25px;
+}
+
+.cassa{
+
+border-top: 1px solid #cdcdcd;
+width: 305px;
+position: relative;
+top:10px;
+
+}
+
+.acquisto button{
+  position: relative;
+  bottom: 6vh;
+  width: 169px;
+  height: 40px;
+  text-align: center;
+  font-family: 'Juventus Fans Regular';
+  background-color: #ff2850;
+  border: 1px solid #ff2850;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 22px;
+  position: relative;
+  top:-35px;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .menu-contenitor{
+   flex-direction: column-reverse; 
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 45px;
+  }
+
+  .card-img2 {
+   display: none;
+  }
+
+
+.header-menu{
+    white-space: nowrap;
+  }
+
+  .radio{
+    position: relative;
+    left: -175px;
+  }
+  
+}
+
+
+@media only screen and (max-width: 800px) {
+
+body{
+  overflow-x: hidden;
+}
+}
+
+
+/* MODAL TABELLE TAGLIE */
+
+#cover {       
+  position: fixed;
+  z-index: 1000; 
+  left: 0;   
+  bottom:0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 0%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+
+}
+
+.modal {
+  height: auto;
+  width: 800px;
+  position: fixed;
+  z-index: 1001; 
+  position: relative;
+  left: 25%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  border-radius: 10px 10px 10px 10px; 
+  transform: translate3d(0, 0, 0);
+  color: #2b2e38;
+  background: #fff;
+}
+
+.closebtn2{
+  position: relative;
+    left: 749px;
+    top: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    border: none;
+    width: 5%;
+    height: 100%;
+}
+
+.closebtn2:hover{
+color: red;
+
+}
+
+.modal h1{
+  text-align: center;
+  font-size: 36px;
+  position: relative;
+  bottom: 55px;
+}
+
+.modal p{
+  font-size: 23px;
+}
+
+.tab-content{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: -111px;
+}
+
+
+#tab a {
+  padding: 8px;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Juventus Fans Regular';
+  font-size: 22px;
+}
+
+#tab a:hover,
+#tab a:focus {
+  color: #ff2850;
+}
+
+
+.size-box{
+height: 220px;
+width: 250px;
+position: relative;
+left: 535px;
+bottom: 320px;
+}
+
+.contenitore-testo {
+margin-left: 30px;
+width: 60%;
+font-size: 20px;
+}
+
+.size-box img{
+  height: 100%;
+  width: 100%;
+  float: left; 
+}
+
+.collapsible {
+  background-color: transparent;
+  border:none;
+  color: #000;
+  cursor: pointer;  
+  width: 597px;
+  text-align: left;
+  font-size: 23px;
+  padding: 36px 70px;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.attivo, .collapsible:hover {
+  color: #ff2850;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  position: fixed;
+  right: 650px;
+}
+
+.attivo:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.news-box{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.news-box div{
+  font-size: 10px;
+}
+
+div.gallery {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+
+}
+
+.gallery:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+div.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  height: 60px;
+  position: relative;
+  bottom: 25px;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+
+/* METEO */
+
+
+.box-meteo{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-top: 55px;
+  text-align: center;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  justify-content: center;
+}
+
+
+.box-meteo h1{
+  font-size: 45px;
+
+}
+.box-meteo form{
+  margin-bottom: 25px;
+}
+
+.contenitor-meteo{
+  margin: 40px;
+  height: auto;
+  display: none;
+  justify-content: space-around;
+}
+
+.meteo-card{
+ margin-left: 50px;
+ margin-top: 25px;
+ height: 400px;
+ width: 300px;
+ background-color: #ff2850;
+ color: white;
+ text-align: center;
+}
+
+.box-outfit{
+  height: auto;
+  width: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+#cerca-citta{
+  height: 50px;
+  width: 400px;
+}
+
+.box-meteo button{
+  height: 50px;
+  width: 50px;
+  font-size: 16px;
+  background-color: #ff2850;
+  color: white;
+  border: 1px solid black;
+}
+
+
